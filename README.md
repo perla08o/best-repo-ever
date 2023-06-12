@@ -43,7 +43,7 @@ flowchart TB
     C --> W(Push commit to *dcrdev#* \n using command:\ngit push origin own_75_assign_change_author:dcrdev#)
     W --> T(CI runs tests and deploys to -dcrdev#- )
     T --> O(Finally test changes on -dcrdev#- )
-    O --> D(Create PR of *feature branch* to *staging* \n Select reviewer)
+    O --> D(Create PR of *feature branch* to *staging* \n Select reviewer \nskip this if a pull request was already created before)
     D --> E(Send PR to review)
     E -->|PR Approved| F1(Merge PR to *staging*)
     F1 -->G(CI deploys *staging* to -dcrstaging- )
